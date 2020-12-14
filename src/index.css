@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html{
+  font-size: 62.5%;
+}
+
+@media screen and (max-width:998px){
+  html{
+    font-size: 55%;
+  }
+
+}
+@media screen and (max-width:768px){
+  html{
+    font-size: 45%;
+  }
+  
+}
+
+@font-face {
+  font-family: 'Si-ui-black';
+  src: local('si-ui-black'), url(./assets/Fonts/sf-ui-display-black-58646a6b80d5a.otf);
+}
+@font-face {
+  font-family: 'Si-ui-bold';
+  src: local('si-ui-bold'), url(./assets/Fonts/sf-ui-display-bold-58646a511e3d9.otf);
+}
+@font-face {
+  font-family: 'Si-ui-heavy';
+  src: local('si-ui-heavy'), url(./assets/Fonts/sf-ui-display-heavy-586470160b9e5.otf);
+}
+@font-face {
+  font-family: 'Si-ui-light';
+  src: local('si-ui-light'), url(./assets/Fonts/sf-ui-display-light-58646b33e0551.otf);
+}
+@font-face {
+  font-family: 'Si-ui-medium';
+  src: local('si-ui-medium'), url(./assets/Fonts/sf-ui-display-medium-58646be638f96.otf);
+}
+@font-face {
+  font-family: 'Si-ui-semibold';
+  src: local('si-ui-semibold'), url(./assets/Fonts/sf-ui-display-semibold-58646eddcae92.otf);
+}
+@font-face {
+  font-family: 'Si-ui-thin';
+  src: local('si-ui-thin'), url(./assets/Fonts/sf-ui-display-thin-58646e9b26e8b.otf);
+}
+@font-face {
+  font-family: 'Si-ui-ultralight';
+  src: local('si-ui-ultralight'), url(./assets/Fonts/sf-ui-display-ultralight-58646b19bf205.otf);
+}

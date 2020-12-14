@@ -13,13 +13,13 @@ export default function Footer() {
                 <div className="col-md-4 our-locations">
                     <div className="footer-heading" >Our locations</div>
                     <div className="footer-text" >
-                        Trust Pharmacy, 1st Floor, Beside GOLD HUB MALL, Main Rd, opp. K
-                        B N Hospital, Gulbarga, Karnataka 585102
-                </div>
+                        <p>Trust Pharmacy, 1st Floor, Beside GOLD HUB MALL, Main Rd, opp. K
+                        B N Hospital, Gulbarga, Karnataka 585102</p>
+                    </div>
                     <button className="footer-button">Show on Maps</button>
                     <div className="footer-text">
-                        92, New Jewargi Rd, Bhagyavanti Nagar, Santosh Colony, Gulbarga,
-                        Karnataka 585102
+                        <p>92, New Jewargi Rd, Bhagyavanti Nagar, Santosh Colony, Gulbarga,
+                        Karnataka 585102</p>
                 </div>
                     <button className="footer-button">Show on Maps</button>
                 </div>
@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className="col-md-3 our-timings">
                     <div className="footer-heading" >Our timings</div>
                     <div className="footer-text" >
-                        Mon. Wed, Thu: 9am to 5pm <br />Tue: 11am to 7pm <br />Fri: 9am to 1pm <br />By Appointment Only<br /><br /><br /><br />
+                        <p>Mon. Wed, Thu: 9am to 5pm <br />Tue: 11am to 7pm <br />Fri: 9am to 1pm <br />By Appointment Only<br /><br /><br /><br /></p>
                     </div>
                 </div>
 

@@ -1,0 +1,33 @@
+.NavBar-container{
+    font-size: 1.5rem;
+    background-color: #175C64;
+
+    .navbar-brand{
+        margin: 0%;
+        padding: 0px;
+
+        .NavBar-logo{
+            margin-top: -4.7rem;
+            margin-left: -7rem;
+            width: 55rem;
+            height: auto;
+        }
+    }
+
+    .navbar-toggler-left{
+        color: white;
+        background-color: black;
+        z-index: 2;
+    }
+
+    .navbar-toggler-right{
+        color: white;
+        min-width: 6rem;
+        background-color: brown;
+    }
+
+    .nav-link{
+        font-style: 'Si-ui-bold';
+        color: white;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter,Switch,Route,} from "react-router-dom";
+import { Switch, Route, } from "react-router-dom";
 import About from '../Pages/About/About';
 import Buzz from '../Pages/Buzz/Buzz';
 import Experience from '../Pages/Experience/Experience';
@@ -11,17 +11,15 @@ import Visit from '../Pages/Visit/Visit';
 export default function Routes() {
     return (
         <div>
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path='/'><Home/></Route>
-                    <Route exact path='/about'><About/></Route>
-                    <Route exact path='/buzz'><Buzz/></Route>
-                    <Route exact path='/experience'><Experience/></Route>
-                    <Route exact path='/expert'><Expert/></Route>
-                    <Route exact path='/services'><Services/></Route>
-                    <Route exact path='/visit'><Visit/></Route>
-                </Switch>
-            </BrowserRouter>
+            <Switch>
+                <Route exact path='/'><Home /></Route>
+                <Route exact path='/about'><About /></Route>
+                <Route exact path='/buzz'><Buzz /></Route>
+                <Route exact path='/experience'><Experience /></Route>
+                <Route exact path='/expert'><Expert /></Route>
+                <Route exact path='/services'><Services /></Route>
+                <Route exact path='/visit'><Visit /></Route>
+            </Switch>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import Route from './Router/Routes';
 function App() {
   return (
     <>
-      <NavBar/>
+      {/* <NavBar/> */}
       <Route/>
     </>
   );

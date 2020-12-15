@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from '../../Component/Footer/Footer'
-import Visit from '../Visit/Visit'
+import ScheduleVisit from '../../Component/ScheduleVisit/ScheduleVisit'
 
 export default function Home() {
     return (
         <div>
-            <Visit/>
+            <ScheduleVisit/>
             <Footer/>
         </div>
     )

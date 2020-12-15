@@ -1,6 +1,6 @@
 .NavBar-container{
     font-size: 1.5rem;
-    background-color: #175C64;
+    background-color: transparent;
 
     .navbar-brand{
         margin: 0%;
@@ -36,7 +36,7 @@
 @media (max-width:800px){
     .NavBar-container{
         padding: 2rem;
-        background-color: white;
+        background-color: transparent;
 
         .NavBar-mobile-logo{
             display: inline !important;
@@ -48,11 +48,11 @@
     
         .Nav-icons{
             margin-right: 0px !important;
-            color: black;
+            color: white;
         }
 
         .nav-link{
-            color: black !important;
+            color: white !important;
         }
     }
 }

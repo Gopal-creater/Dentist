@@ -7,13 +7,13 @@ import {NavLink} from 'react-router-dom';
 export default function NavBar() {
     return (
         <div className='NavBar-container'>
-            <nav class="navbar-light navbar navbar-expand-lg">
+            <nav class="navbar-dark navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src ={logo} className='NavBar-logo'></img>
                         <img src ={mobilelogo} className='NavBar-mobile-logo'></img>
                     </a>
-                    <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <button style={{color:'white'}} class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon" style={{color:'white'}}></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">

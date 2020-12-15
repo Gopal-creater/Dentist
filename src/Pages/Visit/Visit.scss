@@ -1,0 +1,75 @@
+.onevist{
+    width: 100%;
+    height: auto;
+}
+.text1{
+    padding: 20rem;
+    padding-left: 13rem;
+    padding-top: 20rem;
+    // padding-right: 18rem;
+
+    h1{
+      font-family: 'Si-ui-bold';
+        padding-top: 5rem;
+        font-size: 4rem;
+    }
+    p{
+      font-family: 'Si-ui-light';
+        font-size: 1.5rem;
+    }
+}
+.background{
+    margin-left: 29.4rem;
+    background:transparent linear-gradient(180deg, #46C1BB 0%, #175C64 100%) 0% 0% no-repeat padding-box;
+    width: 60%;
+    height: 70%;
+    z-index: -1;
+}
+.image_1{
+    margin-top: -45rem;
+    margin-left: -12rem;
+    background-image: url('../../assets/CER-Press-image-CEREC-Ortho-SW-2.0-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 40rem;
+}
+
+@media screen and (max-width: 480px){
+    .onevist{
+        z-index: 99;
+    }
+    .text1{
+        padding: 0rem;
+        padding-left: 3rem;
+        padding-top: -16rem;
+        // padding-right: 18rem;
+        z-index: -1;
+    
+        h1{
+          font-family: 'Si-ui-bold';
+            padding-top: 5rem;
+            font-size: 4rem;
+        }
+        p{
+          font-family: 'Si-ui-light';
+            font-size: 1.5rem;
+        }
+    }
+    .background{
+        margin-left: 0rem;
+        background:transparent linear-gradient(180deg, #46C1BB 0%, #175C64 100%) 0% 0% no-repeat padding-box;
+        width: 60%;
+        height: 70%;
+        z-index: -1;
+    }
+    .image_1{
+        margin-top: 0rem;
+        margin-left: 0rem;
+        background-image: url('../../assets/CER-Press-image-CEREC-Ortho-SW-2.0-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 40rem;
+    }
+}

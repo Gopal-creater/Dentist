@@ -1,0 +1,152 @@
+section{
+    background-image: linear-gradient(#175C64, #46C1BB,white);
+    perspective: 1rem;
+    width: 100%;
+    height: auto;
+} 
+.sky{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    //background-color: pink;
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+        .sky_top{
+            height: 60vh;
+            width: 100%;
+            background-image: url(../../assets/3.png);
+            background-size: contain;
+            background-repeat:no-repeat;
+            animation: bg-animation_top 30s linear infinite;
+            position: relative;
+            right: 5%;
+            top:5%;
+        }
+        .sky_bottom{
+            height: 60vh;
+            width: 100%;
+            background-image: url(../../assets/4.png);
+            background-size: contain;
+            background-repeat:no-repeat;
+            animation: bg-animation 30s linear infinite;
+            position: relative;
+            left: 60%;
+            bottom: 10%;
+        }
+    
+    }
+    
+    @keyframes bg-animation{
+       
+        100%{
+            transform: translateX(-100rem);
+        }
+    }
+    @keyframes bg-animation_top{
+        100%{
+            transform: translateX(100rem);
+        }
+    }
+    .mouseover_animation{
+        position: relative;
+        z-index: -2;
+        // background-color: yellow;
+        height: 170vh;
+        //overflow: hidden;
+        margin-top: -60rem;  
+    }
+    .mouseover_animation_mobile{
+        display: none;
+    
+    }
+    
+    .hand_animation{
+        overflow: hidden;
+        margin-top: -90rem;
+        height: 100vh;
+        //background-color: pink;
+    
+        #left_hand {
+            img{
+                margin-left: -20rem;
+            }
+        }
+        #right_hand {
+            img{
+                margin-left: 25rem;
+                margin-top: 30rem;
+            }
+        }
+    
+    }
+@media screen and (max-width:786px){
+    section{
+        height: 100vh;
+        z-index: 2;
+    
+    } 
+    .sky{
+        .sky_top{
+            position: relative;
+            right: 10%;
+        }
+        .sky_bottom{
+            position: relative;
+            left: 10%;
+            margin-top: -30rem;
+        }
+    }
+    @keyframes bg-animation{
+        100%{
+            transform: translateX(-50rem);
+        }
+    }
+    @keyframes bg-animation_top{
+        100%{
+            transform: translateX(50rem);
+        }
+    }
+    .sky_bottom{
+        margin-left: 0rem;
+        margin-top: 10rem;
+    }
+    
+    .mouseover_animation{
+        display: none;
+    }
+    .mouseover_animation_mobile{
+        position: relative;
+        display: inline;
+        z-index: -2;
+        background-color: pink;
+        margin-top: -520rem;
+        border: 0px;
+    }
+    .hand_animation{
+        overflow: hidden;
+        margin-top: -78rem;
+        height: 100vh;
+       img{
+           width: 100%;
+           height: 100%;
+       }
+        #left_hand {
+            img{
+                max-width: 100%;
+                height: auto;
+                margin-left: -10rem;
+                margin-top: 5rem;
+            }
+        }
+        #right_hand {
+            img{
+                max-width: 100%;
+                height: auto;
+                margin-left: 14rem;
+                margin-top: 30rem
+            }
+        }
+    }
+    
+  }

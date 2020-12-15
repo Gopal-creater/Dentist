@@ -18,7 +18,7 @@
 
     .nav-link{
         font-style: 'Si-ui-bold';
-        color: white;
+        color: white !important;
         letter-spacing: 1px;
     }
 
@@ -36,6 +36,7 @@
 @media (max-width:800px){
     .NavBar-container{
         padding: 2rem;
+        background-color: white;
 
         .NavBar-mobile-logo{
             display: inline !important;
@@ -47,6 +48,11 @@
     
         .Nav-icons{
             margin-right: 0px !important;
+            color: black;
+        }
+
+        .nav-link{
+            color: black !important;
         }
     }
 }

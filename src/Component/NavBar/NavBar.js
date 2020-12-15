@@ -7,7 +7,7 @@ import {NavLink} from 'react-router-dom';
 export default function NavBar() {
     return (
         <div className='NavBar-container'>
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar-light navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src ={logo} className='NavBar-logo'></img>
@@ -38,7 +38,7 @@ export default function NavBar() {
                             </li>
                         </ul>
                     </div>
-                    <div className='Nav-icons order-last'>
+                    <div className='Nav-icons'>
                         <i class="fa fa-search" aria-hidden="true"></i>
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         <i class="fa fa-user-circle-o" aria-hidden="true"></i>

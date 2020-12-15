@@ -1,0 +1,59 @@
+.experience-animation{
+    background-image: linear-gradient(180deg,white 5%, #175C64);
+
+    .swiper-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 2rem 0px 2rem 13rem;
+    
+        .swiper-show{
+          width: 70px;
+          height: 70px;
+          z-index: 2;
+          position: absolute;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-weight: bolder;
+          background-color: white;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          width: 70%;
+          :hover{
+            cursor: pointer;
+          }
+        }
+      
+        .swiperimg {
+          width: 95%;
+          height: 550px;
+        }
+    }
+  
+}
+
+    
+    
+    
+@media only screen and (max-width: 900px) {
+    .experience-animation{
+        padding: opx;
+        
+          .swiper-container {
+            margin: 0%;
+            width: 100%;
+            padding:1.5rem 0px 0.2rem 6rem;
+      
+            .swiperimg {
+              width: 100%;
+              height: auto;
+            }
+        }
+    }
+    
+}

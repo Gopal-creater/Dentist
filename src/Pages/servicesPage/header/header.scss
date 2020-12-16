@@ -1,0 +1,16 @@
+.header_image{
+    width: 50rem;
+    height: auto;
+    margin-top: -4rem;
+    margin-left: -6rem;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 480px){
+    .header_image{
+        display: none;
+    }
+
+}

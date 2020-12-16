@@ -35,9 +35,9 @@ export default function ToothMouseover() {
         window.addEventListener('mousemove', (e) => {
             const scro = window.pageYOffset + e.clientY;
             const scroX = window.pageYOffset + e.clientX;
-            console.log(scroX);
+            // console.log(scroX);
 
-            if (scro > 430 && scroX < 1396 && scroX > 400) {
+            if (scro > 500) {
                 update(cursorPoint(e, svgElement));
                 document.getElementById('circle-shadow').style.display = 'block';
                 document.getElementById('mask-circle').style.display = 'block';

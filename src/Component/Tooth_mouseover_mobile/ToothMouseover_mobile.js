@@ -34,7 +34,7 @@ export default function ToothMouseoverMobile() {
         // tslint:disable-next-line:only-arrow-functions
         window.addEventListener('mousemove', (e) => {
             const scro = window.pageYOffset + e.clientY;
-            console.log(scro);
+            // console.log(scro);
 
             if (scro > 280 && scro < 730) {
                 update(cursorPoint(e, svgElement));

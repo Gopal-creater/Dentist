@@ -5,7 +5,7 @@ import Buzz from '../Pages/Buzz/Buzz';
 import Experience from '../Pages/Experience/Experience';
 import Expert from '../Pages/Expert/Expert';
 import Home from '../Pages/Home/Home';
-import Services from '../Pages/Services/Services';
+import Services from '../Pages/servicesPage/services';
 import Visit from '../Pages/Visit/Visit';
 
 export default function Routes() {

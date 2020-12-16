@@ -62,7 +62,7 @@ export default function HeadingMouseoverMobile() {
                     <rect width="100%" height="100%" fill="yellow"
                         fillOpacity="0"
                     />
-                    <image xlinkHref={heading1} width="380" height="380" />
+                    <image x='35' xlinkHref={heading1} width="300" height="300" />
                 </svg>
                 <svg className="heading_image_mobile" id="animation_heading_mobile">
                     <defs>
@@ -75,7 +75,7 @@ export default function HeadingMouseoverMobile() {
                     </defs>
                     <g clipPath="url(#mask1_mobile)">
                         <rect width="100%" height="100%" fill="#175C64" />
-                        <image xlinkHref={heading2} width="380" height="380" />
+                        <image x='35' xlinkHref={heading2} width="300" height="300" />
                     </g>
                     <circle id="circle-shadow_heading_mobile" cx="50%" cy="50%" r="6%" filter="url(#this_image_heading_mobile)" />
                 </svg>

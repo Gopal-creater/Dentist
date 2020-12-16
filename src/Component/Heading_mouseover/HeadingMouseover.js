@@ -35,7 +35,8 @@ export default function HeadingMouseover() {
         // tslint:disable-next-line:only-arrow-functions
         window.addEventListener('mousemove', (e) => {
             const scrol = window.pageYOffset + e.clientY;
-            if (scrol > 210 && scrol < 330) {
+           
+            if (scrol>250 && scrol<450) {
                 update(cursorPoint(e, svgElement1));
                 document.getElementById('circle-shadow_heading').style.display = 'block';
                 document.getElementById('mask-circle_heading').style.display = 'block';

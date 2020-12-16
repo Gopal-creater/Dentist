@@ -48,11 +48,17 @@
     
         .Nav-icons{
             margin-right: 0px !important;
-            color: white;
+            color: black;
         }
 
         .nav-link{
             color: white !important;
         }
+        #navbarTogglerDemo02{
+            position: absolute;
+            z-index: 1;
+            margin-top: 18em;
+        }
     }
+    
 }

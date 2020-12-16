@@ -19,14 +19,15 @@ html{
 @media screen and (max-width:998px){
   html{
     font-size: 55%;
+    
   }
 
 }
 @media screen and (max-width:768px){
   html{
     font-size: 45%;
+    
   }
-  
 }
 
 @font-face {

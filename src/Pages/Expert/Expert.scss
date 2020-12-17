@@ -1,0 +1,133 @@
+.expert-navbar{
+    display: none;
+}
+
+.expert-container{
+    margin-top: -14rem;
+    .expert-prashantpatil{
+        
+        .expert-prashantpatil-left{
+            padding-left: 8%;
+            padding-top: 8%;
+
+            .expert-name{
+                font-size: 5rem;
+                font-family: 'Si-ui-bold';
+            }
+
+            .expert-description{
+                font-size: 1.5rem;
+                word-spacing: 2px;
+                font-family: 'Si-ui-light';
+            }
+
+            .expert-counter{
+                display: flex;
+                color: #368487;
+                font-family: 'Si-ui-bold';
+                word-spacing: 2px;
+                letter-spacing: 1px;
+                padding-bottom: 2.5rem;
+
+                .expert-countre-number{
+                    // font-size: 5rem;
+                }
+
+                .expert-counter-patient{
+                    margin-left: 10%;
+                }
+            }
+        }
+
+        .expert-prashantpatil-right{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -3rem;
+
+            .expert-image-container{
+                width: 70%;
+                height: 85%;
+                .expert-image{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .expert-prashantpatil-right:after{
+            content:'\A';
+            position:absolute;
+            background:#368487;
+            top:0; bottom:0;
+            left:50%; 
+            width:50%;
+            z-index: -1;
+        }
+    }
+
+    .expert-content{
+        margin-top: 2%;
+        padding-left: 7%;
+        font-size: 1.5rem;
+        word-spacing: 2px;
+        font-family: 'Si-ui-light';
+    }
+
+
+    .expert-prashantpatil-inverted{
+        margin-top: 8rem;   
+    }
+
+    .expert-prashantpatil-inverted-right:after{
+        left: 0px !important;
+    }
+
+    .expert-prashantpatil-inverted-left{
+        padding-left: 0px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 8%;
+
+        .expert-description{
+            text-align: justify;
+            text-align-last: right;
+        }
+    }
+
+    .expert-inverted-content{
+        text-align: justify;
+        text-align-last: right;
+        padding-right: 7%;
+    }
+
+}
+
+@media (max-width:800px){
+
+    .expert-prashantpatil-right{
+        margin-top: 0% !important;
+    }
+
+    .expert-container{
+        margin-top: 0px;
+    }
+    .expert-navbar{
+        display: block !important;
+        overflow: hidden;
+    }
+
+    .expert-content{
+        font-size: 2.1rem !important;
+    }
+
+    .expert-description{
+        font-size: 2.1rem !important;
+    }
+
+    .expert-countre-text{
+        font-size: 1.5rem;
+    }
+}

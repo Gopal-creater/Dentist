@@ -3,7 +3,9 @@ import Header from './header/header'
 import './services.scss'
 import RootCanal from '../../assets/root_canal.png'
 import NavBar from '../../Component/NavBar/NavBar';
+import Banner from '../../assets/Group 633.png'
 import CarouselShow2 from '../../Component/Carousel_show2/CarouselShow2';
+import CarouselShow3 from '../../Component/Carousel_show3/CarouselShow3';
 
 function Services() {
   return (
@@ -36,14 +38,16 @@ function Services() {
           <h1>Crowns</h1>
           <p>Dental crowns are fabricated in the dental laboratory using the impression your dentist has made of your tooth after having prepared it. Because dental crowns encase the visible portion of a tooth, any porcelain crown (all-ceramic or porcelain-fused-to-metal ones) can be used to enhance the cosmetic appearance of a tooth.</p>
         </div>
-        {/* <div className="carousel_services">
-          <div className="carousel_inside col-12">
-              <CarouselShow2 />
-          </div>
-          <div className="how_text col-12">
-          </div>
-        </div> */}
-        
+        <div className="carousel_services">
+          <CarouselShow2 /> 
+        </div>
+        <div id="emi-container">
+        <img src={Banner} width='100%' height='auto' />
+      </div>
+      <div className="services_heading text-center">
+        <h1 style={{fontFamily:'Si-ui-bold'}}>Other services</h1>
+      </div>
+      <CarouselShow3 />
       </div>
     </div>
   );

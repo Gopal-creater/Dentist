@@ -96,6 +96,15 @@ export default function Visit() {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         beforeChange: (current, next) => setImageIndex(next),
+        responsive: [
+            {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+            }}
+        ]
     };
     return (
         <div>

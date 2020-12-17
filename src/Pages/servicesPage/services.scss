@@ -48,8 +48,13 @@
     }
 }
 .carousel_services{
+    margin-top: 30rem;
+}
+#emi-container{
     margin-top: 26rem;
-    
+}
+.services_heading{
+    margin-top: 6rem;
 }
 @media screen and (max-width: 480px){
     .navbar_services{
@@ -91,6 +96,21 @@
         padding-right: 5rem;
         margin-top: 4rem;
         margin-left: 4rem;
+        h1{
+            font-family: 'Si-ui-bold';
+            font-size: 3rem;
+        }
+        p{
+            font-family: 'Si-ui-light';
+            letter-spacing: .1rem;
+            font-size: 2rem;
+        }
+    }
+    .carousel_services{
+        margin-top: 10rem;
+    }
+    #emi-container{
+        margin-top: 6rem;
     }
 
 }

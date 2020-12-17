@@ -19,6 +19,8 @@ import Tooth_removal from '../../assets/Tooth removal.png';
 import Tooth_Jewellery from '../../assets/Tooth Jewellery.png';
 import Self_ligating_braces from '../../assets/Self-ligating braces.png';
 import './Visit.scss';
+import Parallax from 'react-rellax';
+import Testimonials from './testimonials/testimonial';
 
 export default function Visit() {
     const NextArrow = ({ onClick }) => {
@@ -42,15 +44,15 @@ export default function Visit() {
             </div>
         );
     };
-    const images1=[{ pics: Scaling, heading: 'Scaling' },
-                     { pics: Root_Canal, heading: 'Root Canal'},
-                    {pics:Paediatric_Dentistry, heading: 'Paediatric Dentistry'},
-                    {pics: Laser_curetage,heading: 'Laser Curetage' },
-                    {pics:Gum_infection,heading: 'Gum Infection'},
-                    {pics: Flap_surgery,heading: 'Flap Surgery' },
-                    {pics: dental_implants, heading: 'Dental Implants' },
-                ]
-    
+    const images1 = [{ pics: Scaling, heading: 'Scaling' },
+    { pics: Root_Canal, heading: 'Root Canal' },
+    { pics: Paediatric_Dentistry, heading: 'Paediatric Dentistry' },
+    { pics: Laser_curetage, heading: 'Laser Curetage' },
+    { pics: Gum_infection, heading: 'Gum Infection' },
+    { pics: Flap_surgery, heading: 'Flap Surgery' },
+    { pics: dental_implants, heading: 'Dental Implants' },
+    ]
+
     const images = [{ pics: Scaling, heading: 'Scaling' }, { pics: Root_Canal, heading: 'Root Canal' }, Paediatric_Dentistry,
         Laser_curetage,
         Gum_infection,
@@ -98,12 +100,13 @@ export default function Visit() {
         beforeChange: (current, next) => setImageIndex(next),
         responsive: [
             {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-            }}
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }
         ]
     };
     return (
@@ -121,9 +124,7 @@ export default function Visit() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="treatment">
-                    <h1 className="treatments text-center" style={{ fontFamily: 'si-ui-bold' }}>TREATMENTS</h1>
-                </div> */}
+
                 <div className="carousel_onevisit col-12">
                     <Slider {...settings}>
                         {images1.map((img, idx) => (
@@ -133,23 +134,78 @@ export default function Visit() {
                                     <p>from traditional braces to invisible alignes get the best alignment</p>
                                     <button className="btn btn-primary" style={{ fontFamily: 'si-ui-light', letterSpacing: '2px' }}>Explore</button>
                                 </div>
-                                <img className="pics" src={img.pics}  />
+                                <img className="pics" src={img.pics} />
                             </div>
                         ))}
                     </Slider>
 
                 </div>
                 <div class="three-dots">
-                        <span class="second"></span>
-                        <span class="second"></span>
-                        <span class="first"></span>
-                        <span class="first"></span>
-                        <span class="first"></span>
-                        <span class="first"></span>
-                        <span class="first"></span>
-                        <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="second"></span>
+                    <span class="first"></span>
+                    <span class="first"></span>
+                    <span class="first"></span>
+                    <span class="first"></span>
+                    <span class="first"></span>
+                    <span class="first"></span>
 
+                </div>
+                <Parallax speed={4}>
+                    <div className="treatment">
+                        <h1 className="treatments text-center" style={{ fontFamily: 'si-ui-bold' }}>TREATMENTS</h1>
                     </div>
+                </Parallax>
+                <div className="row">
+                    <div className="col-md-6 col-12">
+                        <div className="background_2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"></div>
+                        <div className="image_2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-12 text2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                        <h1>Meet<br /> Dr. Prashant Patil</h1>
+                        <p>Read about the story of the one-of a kind, world-class dentistry in Karnataka and the man behind it.</p>
+                        <button className="btn btn-primary" style={{ fontFamily: 'si-ui-light', letterSpacing: '2px' }}>Explore</button>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-6 col-12 text3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                        <h1>Dental Tourism.</h1>
+                        <h3>A paid vacation + your dental procedure</h3><br></br>
+                        <p>Combine your paid vacation with your dental procedure schedule to save money or to get more value out of investment..</p>
+                        <button className="btn btn-primary" style={{ fontFamily: 'si-ui-light', letterSpacing: '2px' }}>Explore</button>
+                    </div>
+                    <div className="col-md-6 col-12">
+                        <div className="image_3" data-aos="fade-left" data-aos-duration="1000"></div>
+                    </div>
+                </div>
+                <div className="counter" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" >
+                    <div className="row text-center" >
+                        <div className="col-md col-3">
+                            <h1 style={{ fontFamily: 'Si-ui-bold' }}>21</h1>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div className="col-md col-3">
+                            <h1>311+</h1>
+                            <p>Happy patients</p>
+                        </div>
+                        <div className="col-md col-3">
+                            <h1>10</h1>
+                            <p>Advanced Dental Operatories</p>
+                        </div>
+                        <div className="col-md col-3">
+                            <h1>4</h1>
+                            <p>Winning Awards</p>
+                        </div>
+                        <div className="col-md col-3">
+                            <h1>0</h1>
+                            <p>Medical Specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="testimonials">
+                    <Testimonials />
+                </div>
             </div>
         </div>
     )

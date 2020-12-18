@@ -23,6 +23,8 @@ import Parallax from 'react-rellax';
 import Testimonials from './testimonials/testimonial';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
 
 
 export default function Visit() {
@@ -189,7 +191,15 @@ export default function Visit() {
                 <div className="counter_desktop" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" >
                     <div className="row text-center" >
                         <div className="col">
-                            <h1 style={{ fontFamily: 'Si-ui-bold' }}>21</h1>
+                            <h1 style={{ fontFamily: 'Si-ui-bold' }}>
+                                <CountUp start={1} end={21} redraw={true} duration={5}>
+                                    {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start} delayedCall>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                    )}
+                                </CountUp>
+                            </h1>
                             <p>Years of Experience</p>
                         </div>
                         <div className="col">
@@ -215,7 +225,15 @@ export default function Visit() {
                     <div className="row text-center" >
                         <div className="col-6">
                             <div className="">
-                                <h1 style={{ fontFamily: 'Si-ui-bold' }}>21</h1>
+                                <h1 style={{ fontFamily: 'Si-ui-bold' }}>
+                                    <CountUp start={1} end={21} redraw={true} duration={5}>
+                                        {({ countUpRef, start }) => (
+                                            <VisibilitySensor onChange={start} delayedCall>
+                                                <span ref={countUpRef} />
+                                            </VisibilitySensor>
+                                        )}
+                                    </CountUp>
+                                </h1>
                                 <p>Years of Experience</p>
                             </div>
                             <div className="">

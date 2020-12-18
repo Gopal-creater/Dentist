@@ -192,6 +192,7 @@
     height: 35px;
   }
   .three-dots {
+      
     width: 100%;
     height: 5%;
     display: inline-flex;
@@ -201,6 +202,8 @@
     position: absolute;
     margin-top: -55px !important;
     margin-left: -60px !important;
+    display: none;
+
     span.first {
       width: 150px;
       height: 3px;
@@ -270,7 +273,7 @@
 .text3{
     
     padding: 20rem;
-    padding-top: 18rem;
+    padding-top: 35rem;
     padding-left: 16rem;
 
     h1{
@@ -298,7 +301,7 @@
     }
 }
 .image_3{
-    margin-top: -1rem;
+    margin-top: 15rem;
     margin-left: 0px;
     background-image: url('../../assets/Group 472.png');
     background-size: contain;
@@ -379,8 +382,7 @@
         letter-spacing: 2rem;
         opacity: 0.1;
         color: #000000;
-        margin:0
-       
+        margin:0;       
     }
     .carousel_onevisit{
         width: 100%;
@@ -451,7 +453,7 @@
       .three-dots{
           display: none;
       }
-      .background_2{
+    .background_2{
         background-color: #46C1BB;
         width: 26rem;
         height: 50rem;
@@ -465,22 +467,26 @@
         height: 40rem;
         margin-top: -45rem;
         margin-left: 3rem;
+        padding-right:3rem ;
     }
     .text2{
         padding-top: 15rem !important;
-        padding-right: 1rem;
+        padding-left:3rem ;
+        padding-right: 3rem;
     
         h1{
           font-family: 'Si-ui-bold';
             font-size: 4rem;
-            text-align: right;
+            text-align: left;
+            // padding-left: 3rem;
         }
         p{
           font-family: 'Si-ui-light';
             font-size: 2rem;
-            text-align: right;
+            text-align: left;
             letter-spacing: .1rem;
-            padding-left: 4rem;
+            padding-left: 0rem;
+            padding-right: 3rem;
         
         }
         .btn{
@@ -492,7 +498,7 @@
             font-size: 1.5rem;
             color: #F7F7F7;
             // font: normal normal bold 20px/25px SF UI Display;
-            margin-left: 43rem;
+            margin-left: 0rem;
         }
     }
     .text3{
@@ -528,6 +534,9 @@
             margin-left: 0rem;
         }
     }
+    .image_3{
+        margin-top: 10rem;
+    }
     .counter_desktop{
         display: none;
     }
@@ -542,6 +551,9 @@
         .row{
             padding-top: 5rem;
             padding-bottom: 5rem;
+            margin-left: -2rem;
+            margin-right: 3rem;
+
             
             h1{
                 color: white;
@@ -551,6 +563,7 @@
             p{
                 color: white;
                 font-size: 1.5rem;
+                padding-bottom: 2rem;
             }
         }
     }

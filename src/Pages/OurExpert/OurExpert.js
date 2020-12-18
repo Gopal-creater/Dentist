@@ -43,8 +43,10 @@ export default function OurExpert() {
                  efficient, aesthetically beautiful and in many cases cost effective compared to other dental treatments.
                  </p>
                 </div>
-
+                <div className='ourexpert_carosel'>
                 <CarouselShow2 />
+                </div>
+                
                 <div className='ourexpert-schedulevisit'>
                     <ScheduleVisit />
                 </div>

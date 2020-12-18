@@ -52,6 +52,10 @@
         background: transparent linear-gradient(180deg, #FFFFFF 0%, #46C1BB 41%, #175C64 100%) 0% 0% no-repeat padding-box;
     }
 }
+.ourexpert_carosel{
+    margin-top: -32rem;
+    margin-bottom: 20rem;
+}
 
 
 @media(max-width:800px){
@@ -84,8 +88,8 @@
         font-size: 1.9rem !important;
         letter-spacing: 1px;
     }
-
-    .ourexpert-text-container{
-        padding-top: 5% !important;
+    .ourexpert_carosel{
+        margin-top: 1rem;
+        margin-bottom: 10rem;
     }
 }

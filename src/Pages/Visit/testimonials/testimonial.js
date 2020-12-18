@@ -27,16 +27,26 @@ export default function Testimonials() {
     const settings = {
         infinite: true,
         lazyLoad: true,
-        speed: 2000,
+        speed: 1000,
         slidesToShow: 2,
         nextArrow: <NextArrow />,
         beforeChange: (current, next) => setImageIndex(next),
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }
+        ]
     };
     return (
         <div className="testimonials">
             <Slider {...settings}>
                 {numbers.map((i) => {
-                    return (<div className={i === imageIndex ? "slides activeSlides" : "slides"} >
+                    return (<div className={i === imageIndex ? "slides_testimonials activeSlides_testimonials" : "slides_testimonials"} >
                         <div className="test">
                             
                         <div className="image" data-aos="fade-up" data-aos-duration="1000">

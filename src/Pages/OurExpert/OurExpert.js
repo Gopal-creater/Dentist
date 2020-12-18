@@ -1,5 +1,6 @@
 import React from 'react';
 import ourexpertimg from '../../assets/CER-Press-image-CEREC-Ortho-SW-2.0-1@2x.png';
+import CarouselShow2 from '../../Component/Carousel_show2/CarouselShow2';
 import Footer from '../../Component/Footer/Footer';
 import NavBar from '../../Component/NavBar/NavBar';
 import ScheduleVisit from '../../Component/ScheduleVisit/ScheduleVisit';
@@ -37,6 +38,7 @@ export default function OurExpert() {
                  efficient, aesthetically beautiful and in many cases cost effective compared to other dental treatments.
                  </p>
                 </div>
+                <CarouselShow2 />
                 <ScheduleVisit />
                 <Footer />
             </div>

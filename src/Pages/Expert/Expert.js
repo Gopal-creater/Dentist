@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Expert.scss';
-import expertimg from '../../assets/experts.png';
+import expertimg from '../../assets/doctor_shadow2.png';
 import ScheduleVisit from '../../Component/ScheduleVisit/ScheduleVisit';
 import Footer from '../../Component/Footer/Footer';
 import Header from '../servicesPage/header/header';

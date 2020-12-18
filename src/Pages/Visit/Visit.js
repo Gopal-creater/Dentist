@@ -203,15 +203,33 @@ export default function Visit() {
                             <p>Years of Experience</p>
                         </div>
                         <div className="col">
-                            <h1>311+</h1>
+                            <h1> <CountUp start={1} end={311} redraw={true} duration={5}>
+                                    {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start} delayedCall>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                    )}
+                                </CountUp>+</h1>
                             <p>Happy patients</p>
                         </div>
                         <div className="col">
-                            <h1>10</h1>
+                            <h1> <CountUp start={1} end={10} redraw={true} duration={5}>
+                                    {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start} delayedCall>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                    )}
+                                </CountUp></h1>
                             <p>Advanced Dental Operatories</p>
                         </div>
                         <div className="col">
-                            <h1>4</h1>
+                            <h1> <CountUp start={1} end={4} redraw={true} duration={5}>
+                                    {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start} delayedCall>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                    )}
+                                </CountUp></h1>
                             <p>Winning Awards</p>
                         </div>
                         <div className="col">
@@ -237,17 +255,35 @@ export default function Visit() {
                                 <p>Years of Experience</p>
                             </div>
                             <div className="">
-                                <h1>311+</h1>
+                                <h1> <CountUp start={1} end={311} redraw={true} duration={5}>
+                                    {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start} delayedCall>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                    )}
+                                </CountUp>+</h1>
                                 <p>Happy patients</p>
                             </div>
                         </div>
                         <div className="col-6">
                             <div className="">
-                                <h1>10</h1>
+                                <h1> <CountUp start={1} end={10} redraw={true} duration={5}>
+                                    {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start} delayedCall>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                    )}
+                                </CountUp></h1>
                                 <p>Advanced Dental Operatories</p>
                             </div>
                             <div className="">
-                                <h1>4</h1>
+                                <h1> <CountUp start={1} end={4} redraw={true} duration={5}>
+                                    {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start} delayedCall>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                    )}
+                                </CountUp></h1>
                                 <p>Winning Awards</p>
                             </div>
                         </div>

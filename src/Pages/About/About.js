@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import NavBar from '../../Component/NavBar/NavBar';
 import Header from '../servicesPage/header/header';
-import Expert from '../../assets/expert1.png';
+import Expert from '../../assets/doctor_shadow2.png';
 import './About.scss'
 import CarouselShow3 from '../../Component/Carousel_show3/CarouselShow3';
 import AOS from "aos";

@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Expert.scss';
 import expertimg from '../../assets/experts.png';
 import ScheduleVisit from '../../Component/ScheduleVisit/ScheduleVisit';
 import Footer from '../../Component/Footer/Footer';
 import Header from '../servicesPage/header/header';
 import NavBar from '../../Component/NavBar/NavBar';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Expert() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return (
         <div>
-            <div className='expert-header'>
+            <div className='expert-header' data-aos="fade-right" data-aos-duration="3000">
                 <Header />
             </div>
-            <div className='expert-navbar'>
+            <div className='expert-navbar' data-aos="fade-right" data-aos-duration="3000">
                 <NavBar/>
             </div>
             <div className='expert-container'>
                 <div className='row expert-prashantpatil'>
-                    <div className='col-md-5 expert-prashantpatil-left'>
+                    <div className='col-md-5 expert-prashantpatil-left' data-aos="fade-up" data-aos-duration="3000" data-aos-delay='1200'>
                         <h1 className='expert-name'>Meet</h1>
                         <h1 className='expert-name'>Dr. Prashant Patil</h1><br /><br />
                         <p className='expert-description'>Combine your paid vacation with your dental<br />
@@ -36,14 +41,14 @@ export default function Expert() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-7 expert-prashantpatil-right'>
+                    <div className='col-md-7 expert-prashantpatil-right' data-aos="fade-left" data-aos-duration="3000" data-aos-delay='600'>
                         <div className='expert-image-container'>
                             <img src={expertimg} alt='expert image' className='expert-image'></img>
                         </div>
                     </div>
                 </div>
 
-                <div className='expert-content'>
+                <div className='expert-content' data-aos="fade-up" data-aos-duration="3000" >
                     <p>Inflamed or infected pulp (pulpitis) often causes a toothache. To relieve the pain and prevent<br />
                  further complications, the tooth may be extracted or it may be saved by a root canal<br />
                   treatment. Once root canal treatment is performed, the patient must usually have a crown<br />
@@ -59,12 +64,12 @@ export default function Expert() {
                 </div>
 
                 <div className='row expert-prashantpatil expert-prashantpatil-inverted'>
-                    <div className='col-md-7 expert-prashantpatil-right expert-prashantpatil-inverted-right'>
+                    <div className='col-md-7 expert-prashantpatil-right expert-prashantpatil-inverted-right' data-aos="fade-right" data-aos-duration="3000">
                         <div className='expert-image-container'>
                             <img src={expertimg} alt='expert image' className='expert-image'></img>
                         </div>
                     </div>
-                    <div className='col-md-5  expert-prashantpatil-left expert-prashantpatil-inverted-left'>
+                    <div className='col-md-5  expert-prashantpatil-left expert-prashantpatil-inverted-left' data-aos="fade-up" data-aos-duration="3000" data-aos-delay='600'>
                         <h1 className='expert-name'>Meet</h1>
                         <h1 className='expert-name'>Dr. Prashant Patil</h1><br /><br />
                         <p className='expert-description'>Combine your paid vacation with your dental<br />
@@ -85,7 +90,7 @@ export default function Expert() {
                     </div>
                 </div>
 
-                <div className='expert-content expert-inverted-content'>
+                <div className='expert-content expert-inverted-content' data-aos="fade-left" data-aos-duration="3000">
                     <p>Inflamed or infected pulp (pulpitis) often causes a toothache. To relieve the pain and prevent<br />
                  further complications, the tooth may be extracted or it may be saved by a root canal<br />
                   treatment. Once root canal treatment is performed, the patient must usually have a crown<br />
@@ -99,7 +104,9 @@ export default function Expert() {
                          be used to enhance the cosmetic appearance of a tooth.
                 </p>
                 </div>
-                <ScheduleVisit />
+                <div className='expert-schedulevisit'>
+                    <ScheduleVisit />
+                </div>
                 <Footer />
             </div>
         </div>

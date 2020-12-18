@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './CarouselShow3.scss';
 import Slider from "react-slick";
 import astronaut from "../../assets/Group 693.png";
 import celebrating from "../../assets/Group 691.png";
 import education from "../../assets/Group 690.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 export default function CarouselShow3() {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
 
     const NextArrow = ({ onClick }) => {
         return (
@@ -43,7 +49,7 @@ export default function CarouselShow3() {
     };
     return (
         <div>
-            <div className="carasouel_services">
+            <div className="carasouel_services" data-aos="fade-right" data-aos-duration="3000">
                 <Slider {...settings}>
                     {images.map((img, idx) => (
                         <div className={idx === imageIndex ? "slide_services activeSlide_services" : "slide_services"}>

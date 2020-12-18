@@ -51,9 +51,9 @@ export default function CarouselShow2() {
     };
     return (
         <div className="row">
-            <div className="col-md-6 col-12">
+            <div className="col-md-6 col-12" >
                 <div className="patch_test">
-                    <div className="App_test">
+                    <div className="App_test" data-aos="fade-right" data-aos-duration="3000">
                         <Slider {...settings}>
                             {images.map((img, idx) => (
                                 <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
@@ -76,7 +76,7 @@ export default function CarouselShow2() {
 
                     </div>
             </div>
-            <div className="col-md-6 col-12" id="text_test">
+            <div className="col-md-6 col-12" id="text_test" data-aos="fade-up" data-aos-duration="3000" data-aos-delay='600'>
                 <h1>How is<br /> it done?</h1>
                 <p>Dental crowns are fabricated in the dental laboratory using the impression your dentist has made of your tooth after having prepared it. Because dental crowns encase the visible portion of a tooth, any porcelain crown (all-ceramic or porcelain-fused-to-metal ones) can be used to enhance the cosmetic appearance of a tooth.</p>
             </div>

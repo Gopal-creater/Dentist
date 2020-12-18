@@ -22,7 +22,7 @@ export default function About() {
             <div className="about_heading" data-aos="fade-right" data-aos-duration="3000">
                 <h1 style={{ fontFamily: 'Si-ui-bold', color: '#3AA9A9' }}>About</h1>
             </div>
-            <div className="about_image" data-aos="fade-left" data-aos-duration="3000" data-aos-delay='600'>
+            <div className="about_image" data-aos="" data-aos-duration="3000" data-aos-delay='600'>
                 <div className="about_patch"></div>
                 <div className="about_doctor_image">
                     <img src={Expert} />

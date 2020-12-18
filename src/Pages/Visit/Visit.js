@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import Scaling from '../../assets/Scaling.png';
 import Root_Canal from '../../assets/root canal.png';
@@ -21,8 +21,15 @@ import Self_ligating_braces from '../../assets/Self-ligating braces.png';
 import './Visit.scss';
 import Parallax from 'react-rellax';
 import Testimonials from './testimonials/testimonial';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function Visit() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+      
     const NextArrow = ({ onClick }) => {
         return (
             <div className="arrows next_button" onClick={onClick} style={{ marginTop: '-300px', marginLeft: '10px' }}>

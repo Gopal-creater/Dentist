@@ -49,7 +49,7 @@ export default function CarouselShow3() {
     };
     return (
         <div>
-            <div className="carasouel_services" data-aos="fade-right" data-aos-duration="3000">
+            <div className="carasouel_services" data-aos="zoom-in" data-aos-duration="3000">
                 <Slider {...settings}>
                     {images.map((img, idx) => (
                         <div className={idx === imageIndex ? "slide_services activeSlide_services" : "slide_services"}>

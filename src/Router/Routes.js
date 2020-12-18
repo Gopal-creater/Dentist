@@ -6,8 +6,9 @@ import Buzz from '../Pages/Buzz/Buzz';
 import Experience from '../Pages/Experience/Experience';
 import Expert from '../Pages/Expert/Expert';
 import Home from '../Pages/Home/Home';
+import OurExpert from '../Pages/OurExpert/OurExpert';
+import ScheduleVisitPage from '../Pages/ScheduleVisitPage/ScheduleVisitPage';
 import Services from '../Pages/servicesPage/services';
-import Visit from '../Pages/Visit/Visit';
 
 export default function Routes() {
     return (
@@ -18,8 +19,9 @@ export default function Routes() {
                 <Route exact path='/buzz'><Buzz /></Route>
                 <Route exact path='/experience'><Experience /></Route>
                 <Route exact path='/expert'><Expert /></Route>
+                <Route exact path='/ourexpert'><OurExpert/></Route>
                 <Route exact path='/services'><Services /></Route>
-                <Route exact path='/visit'><Visit /></Route>
+                <Route exact path='/visit'><ScheduleVisitPage/></Route>
                 <Route exact path='/testing'><CarouselShow2 /></Route>
             </Switch>
         </div>

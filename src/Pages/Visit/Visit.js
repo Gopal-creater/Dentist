@@ -102,7 +102,7 @@ export default function Visit() {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
                 }
@@ -157,7 +157,7 @@ export default function Visit() {
                     </div>
                 </Parallax>
                 <div className="row">
-                    <div className="col-md-6 col-12">
+                    <div className="col-md-6 col-12 ">
                         <div className="background_2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"></div>
                         <div className="image_2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                         </div>
@@ -179,33 +179,65 @@ export default function Visit() {
                         <div className="image_3" data-aos="fade-left" data-aos-duration="1000"></div>
                     </div>
                 </div>
-                <div className="counter" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" >
+                <div className="counter_desktop" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" >
                     <div className="row text-center" >
-                        <div className="col-md col-3">
+                        <div className="col">
                             <h1 style={{ fontFamily: 'Si-ui-bold' }}>21</h1>
                             <p>Years of Experience</p>
                         </div>
-                        <div className="col-md col-3">
+                        <div className="col">
                             <h1>311+</h1>
                             <p>Happy patients</p>
                         </div>
-                        <div className="col-md col-3">
+                        <div className="col">
                             <h1>10</h1>
                             <p>Advanced Dental Operatories</p>
                         </div>
-                        <div className="col-md col-3">
+                        <div className="col">
                             <h1>4</h1>
                             <p>Winning Awards</p>
                         </div>
-                        <div className="col-md col-3">
+                        <div className="col">
                             <h1>0</h1>
                             <p>Medical Specialist</p>
                         </div>
+
                     </div>
                 </div>
-                <div className="testimonials">
-                    <Testimonials />
+                <div className="counter_mobile" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" >
+                    <div className="row text-center" >
+                        <div className="col-6">
+                            <div className="">
+                                <h1 style={{ fontFamily: 'Si-ui-bold' }}>21</h1>
+                                <p>Years of Experience</p>
+                            </div>
+                            <div className="">
+                                <h1>311+</h1>
+                                <p>Happy patients</p>
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className="">
+                                <h1>10</h1>
+                                <p>Advanced Dental Operatories</p>
+                            </div>
+                            <div className="">
+                                <h1>4</h1>
+                                <p>Winning Awards</p>
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className="">
+                                <h1>0</h1>
+                                <p>Medical Specialist</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                {/* <div className="testimonials"> */}
+                <Testimonials />
+                {/* </div> */}
             </div>
         </div>
     )

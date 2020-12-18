@@ -7,7 +7,9 @@ import Experience from '../Pages/Experience/Experience';
 import Expert from '../Pages/Expert/Expert';
 import Home from '../Pages/Home/Home';
 import OurExpert from '../Pages/OurExpert/OurExpert';
+
 import ScheduleVisitPage from '../Pages/ScheduleVisitPage/ScheduleVisitPage';
+
 import Services from '../Pages/servicesPage/services';
 
 export default function Routes() {
@@ -23,6 +25,7 @@ export default function Routes() {
                 <Route exact path='/services'><Services /></Route>
                 <Route exact path='/visit'><ScheduleVisitPage/></Route>
                 <Route exact path='/testing'><CarouselShow2 /></Route>
+                <Route exact path='/ourexpert'><OurExpert /></Route>
             </Switch>
         </div>
     )

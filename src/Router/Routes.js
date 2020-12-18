@@ -11,6 +11,7 @@ import OurExpert from '../Pages/OurExpert/OurExpert';
 import ScheduleVisitPage from '../Pages/ScheduleVisitPage/ScheduleVisitPage';
 
 import Services from '../Pages/servicesPage/services';
+import Treatment from '../Pages/Treatment/Treatment';
 
 export default function Routes() {
     return (
@@ -26,6 +27,7 @@ export default function Routes() {
                 <Route exact path='/visit'><ScheduleVisitPage/></Route>
                 <Route exact path='/testing'><CarouselShow2 /></Route>
                 <Route exact path='/ourexpert'><OurExpert /></Route>
+                <Route exact path='/treatment'><Treatment /></Route>
             </Switch>
         </div>
     )

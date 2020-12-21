@@ -4,6 +4,7 @@
     width: 35rem;
     height: 50rem;
     background: transparent linear-gradient(180deg, #71D1CA 0%, #175C64 100%) 0% 0% no-repeat padding-box;
+    margin-top: 32rem;
 }
 .App_test {
     position: absolute;
@@ -59,7 +60,7 @@
 }
 #text_test{
     padding-left: 25rem;
-    padding-top: 13rem;
+    padding-top: 43rem;
     h1{
         font-family: 'Si-ui-bold';
 
@@ -169,6 +170,7 @@
         width: 25rem;
         height: 40rem;
         background: transparent linear-gradient(180deg, #71D1CA 0%, #175C64 100%) 0% 0% no-repeat padding-box;
+        margin-top: 8rem;
     }
     .App_test {
         position: absolute;
@@ -207,16 +209,18 @@
       display: none;
     }
     #text_test{
-        padding-left: 3rem;
+        padding-left: 1.5rem;
         padding-top: 8rem;
         h1{
             font-family: 'Si-ui-bold';
+            font-size: 4rem;
     
         }
         p{
             font-family: 'Si-ui-light';
             padding-right: 10rem;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            letter-spacing: .2rem;
         }
     }
     .three-dots_test{

@@ -8,7 +8,7 @@
         
         .expert-prashantpatil-left{
             padding-left: 8%;
-            padding-top: 8%;
+            padding-top: 12%;
 
             .expert-name{
                 font-size: 5rem;
@@ -16,8 +16,8 @@
             }
 
             .expert-description{
-                font-size: 1.5rem;
-                word-spacing: 2px;
+                font-size: 1.4rem;
+                word-spacing: 1px;
                 font-family: 'Si-ui-light';
             }
 
@@ -31,6 +31,15 @@
 
                 .expert-countre-number{
                     // font-size: 5rem;
+                    
+                }
+                h1{
+                    font-family: 'Si-ui-bold';
+                    font-size: 5rem;
+                }
+                p{
+                    font-family: 'Si-ui-bold';
+                    font-size: 1.5rem;
                 }
 
                 .expert-counter-patient{
@@ -48,7 +57,8 @@
 
             .expert-image-container{
                 width: 70%;
-                height: 85%;
+                height: 72%;
+                box-shadow: 17px 15px 19px 1px rgba(0, 0, 0, 0.2);
                 .expert-image{
                     height: 100%;
                     width: 100%;
@@ -103,11 +113,17 @@
         padding-right: 7%;
     }
 
+    .expert-schedulevisit{
+        padding-top: 13%;
+        background: transparent linear-gradient(180deg, #FFFFFF 0%, #46C1BB 41%, #175C64 100%) 0% 0% no-repeat padding-box;
+    }
+
 }
 
 @media (max-width:800px){
 
     .expert-prashantpatil-right{
+        height: 33rem;
         margin-top: 0% !important;
     }
 
@@ -130,4 +146,5 @@
     .expert-countre-text{
         font-size: 1.5rem;
     }
+
 }

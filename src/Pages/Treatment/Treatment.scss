@@ -1,0 +1,25 @@
+.treament_carousel{
+ margin-top: 10rem;   
+}
+.treatment_treatments{
+    h1{
+        font-size: 6rem;
+        letter-spacing: 3rem;
+        opacity: 0.1;
+        color: #000000;
+    }
+}
+.treatment_schedule{
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #46C1BB 41%, #175C64 100%) 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 800px){
+    .treatment_treatments{
+        margin-top: 5rem;
+        h1{
+            font-size: 5rem;
+            letter-spacing: 2rem;
+            opacity: 0.1;
+            color: #000000;
+        }
+    }
+}

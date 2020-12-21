@@ -1,0 +1,145 @@
+.testimonials{
+    margin-top: 10rem;
+    overflow: hidden;
+    margin-bottom: 10rem;
+   // background-color: pink;
+}
+.test{
+    padding: 1rem;
+    // margin-left: 2rem;
+}
+.image {
+    padding: 0.5rem;
+    img{
+        width: 26rem;
+        height: 26rem;
+        border-radius: 50%;
+        border: .5rem solid #46C1BB;
+        padding: 2rem;
+        float: left;
+    }
+}
+.text_1{
+    width: 60rem;
+    height: auto;
+    // background-color: pink;
+    padding-top: 5rem;
+    padding-left: 30rem;
+    
+    h1{
+        font-size: 4rem;
+        text-align: left;
+        font-family: 'Si-ui-bold';
+
+    }
+    p{
+        font-size: 2rem;
+        font-family: 'Si-ui-light';
+    }
+       
+}
+.slides_testimonials {
+    //background-color: pink;
+    transform: scale(0.6);
+    transition: transform 300ms;
+    opacity: 0.5;
+    //margin: 0 auto;
+    padding-left: 10rem;
+}
+  
+.activeSlides_testimonials {
+    transform: scale(1.1);
+    opacity: 1;
+    //width: 100%;
+    // margin-top:-4rem ;
+    height: 44vh;
+  }
+.arrows {
+    background-color: white;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+.arrows svg {
+    transition: color 300ms;
+  }
+  
+.arrows svg:hover {
+    color: #68edff;
+  }
+  
+.next_button_2 {
+    right: 15%;
+    top: 50%;
+  }
+
+@media screen and (max-width:480px){
+    .testimonials{
+        margin-top: 5rem;
+        overflow: hidden;
+        margin-bottom: 5rem;
+       // background-color: pink;
+    }
+    .test{
+        padding: 0rem;
+        // margin-left: 2rem;
+    }
+    .image {
+        position: absolute;
+        top:30%;
+        //bottom: 0;
+        //right: 0;
+        left: 35%;
+        padding: 0.1rem;
+        img{
+            width: 16rem;
+            height: 16rem;
+            border-radius: 50%;
+            border: .5rem solid #46C1BB;
+            padding: 2rem;
+            float: left;
+        }
+    }
+    .text_1{
+        //background-color: pink;
+        width: 100%;
+        height: 100vh;
+        // background-color: pink;
+        padding-top: 21rem;
+        padding-left: 15rem;
+        
+        h1{
+            font-size: 4rem;
+            text-align: left;
+            font-family: 'Si-ui-bold';
+    
+        }
+        p{
+            font-size: 2rem;
+            font-family: 'Si-ui-light';
+            padding-right: 12rem;
+        }
+           
+    }
+.slides_testimonials {
+        //background-color: pink;
+        transform: scale(0.6);
+        transition: transform 300ms;
+        opacity: 0.5;
+        //margin: 0 auto;
+        padding-left: 1rem;
+    }
+    
+.activeSlides_testimonials {
+    transform: scale(1.1);
+    opacity: 1;
+    //width: 100%;
+    // margin-top:-4rem ;
+    height: 10vh;
+  }
+.arrows {
+    display: none;
+  }
+  
+}

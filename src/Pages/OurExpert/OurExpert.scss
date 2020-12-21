@@ -11,9 +11,8 @@
         align-items: center;
         .ourexpert-image-container{
             width: 70rem;
-            height: 48rem;
-            margin-top: 10%;
-            margin-bottom: 8%;
+            height: 60rem;
+            margin-top: 13%;
     
         .ourexpert-image{
                 height: 100% ;
@@ -29,13 +28,13 @@
         top: 0;
         left:60%; 
         width:40%;
-        height: 55%;
+        height: 60%;
         z-index: -1;
     }
 
 
     .ourexpert-text-container{
-        padding : 5% 8% 8% 5%;
+        padding : 0% 8% 8% 5%;
 
         .ourexpert-text-heading{
             font-size: 5rem;
@@ -47,6 +46,15 @@
             font-family: 'Si-ui-light';
         }
     }
+
+    .ourexpert-schedulevisit{
+        padding-top: 13%;
+        background: transparent linear-gradient(180deg, #FFFFFF 0%, #46C1BB 41%, #175C64 100%) 0% 0% no-repeat padding-box;
+    }
+}
+.ourexpert_carosel{
+    margin-top: -32rem;
+    margin-bottom: 20rem;
 }
 
 
@@ -66,7 +74,7 @@
     .ourexpert-front-back:after{
         left:30% !important; 
         width:70% !important;
-        height: 90% !important;
+        height: 100% !important;
     }
 
     .ourexpert-image-container{
@@ -79,5 +87,9 @@
     .ourexpert-text-description{
         font-size: 1.9rem !important;
         letter-spacing: 1px;
+    }
+    .ourexpert_carosel{
+        margin-top: 1rem;
+        margin-bottom: 10rem;
     }
 }

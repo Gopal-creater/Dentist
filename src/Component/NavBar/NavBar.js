@@ -8,6 +8,7 @@ export default function NavBar() {
         function openNav() {
             document.getElementById("mySidepanel").style.width = "250px";
           }
+
     return (
         <div className='NavBar-container'>
             <nav className="navbar-light navbar navbar-expand-lg">
@@ -22,7 +23,7 @@ export default function NavBar() {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="me-5 navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <NavLink exact to="/experience" className="nav-link">EXPERIENCE DENTISTRY</NavLink>
+                                <NavLink exact to="/experience" className="nav-link" >EXPERIENCE DENTISTRY</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink exact to='/expert' className='nav-link'>OUR EXPERTS</NavLink>

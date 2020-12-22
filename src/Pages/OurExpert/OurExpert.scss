@@ -4,6 +4,8 @@
 
 .ourexpert-container{  
     margin-top: -17rem;
+    position: absolute;
+    z-index: -1;
     .ourexpert-front-back{
         position: relative;
         display: flex;

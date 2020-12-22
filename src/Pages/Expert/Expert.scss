@@ -31,10 +31,6 @@
                 letter-spacing: 1px;
                 padding-bottom: 2.5rem;
 
-                .expert-countre-number{
-                    // font-size: 5rem;
-                    
-                }
                 h1{
                     font-family: 'Si-ui-bold';
                     font-size: 5rem;
@@ -123,10 +119,22 @@
 }
 
 @media (max-width:800px){
+    .expert-prashantpatil :nth-child(1){ order: 2;}
+    .expert-prashantpatil :nth-child(2){ order: 1;}
+
+    .expert-counter :nth-child(1) { order: 1;}
+    .expert-counter :nth-child(2) { order: 2;}
+
+    .expert-prashantpatil-inverted :nth-child(1){ order: 1;}
+    .expert-prashantpatil-inverted :nth-child(2){ order: 2;}
 
     .expert-prashantpatil-right{
         height: 33rem;
-        margin-top: 0% !important;
+        margin-top: 1% !important;
+    }
+
+    .expert-prashantpatil-left{
+        margin-top: -3.5% !important;
     }
 
     .expert-container{

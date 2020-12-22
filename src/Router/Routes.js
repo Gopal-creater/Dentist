@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route, } from "react-router-dom";
 import CarouselShow2 from '../Component/Carousel_show2/CarouselShow2';
+import Testing from '../Component/testing/Testing';
 import About from '../Pages/About/About';
 import Buzz from '../Pages/Buzz/Buzz';
 import Experience from '../Pages/Experience/Experience';
@@ -25,7 +26,7 @@ export default function Routes() {
                 <Route exact path='/ourexpert'><OurExpert/></Route>
                 <Route exact path='/services'><Services /></Route>
                 <Route exact path='/visit'><ScheduleVisitPage/></Route>
-                <Route exact path='/testing'><CarouselShow2 /></Route>
+                <Route exact path='/testing'><Testing /></Route>
                 <Route exact path='/ourexpert'><OurExpert /></Route>
                 <Route exact path='/treatment'><Treatment /></Route>
             </Switch>

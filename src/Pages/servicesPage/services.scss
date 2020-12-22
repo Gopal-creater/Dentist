@@ -5,6 +5,7 @@
 .endo_text{
     padding-top: 2rem;
     padding-left:14rem;
+    z-index: -3;
     h1{
         font-family: 'Si-ui-bold';
         font-size: 5rem;
@@ -64,9 +65,14 @@
     .navbar_services{
         display: block;
         overflow: hidden;
+        height: 100vh;
+        position: absolute;
+        z-index: 99;
+        width: 100%;
     }
     .endodontics{
         overflow-x:hidden ;
+        padding-top: 10rem;
     }
     .endo_text{
         padding-top: 2rem;

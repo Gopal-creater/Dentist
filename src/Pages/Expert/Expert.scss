@@ -5,6 +5,8 @@
 .expert-container{
     margin-top: -14rem;
     .expert-prashantpatil{
+        position: relative;
+        z-index: -1;
         
         .expert-prashantpatil-left{
             padding-left: 8%;
@@ -128,11 +130,15 @@
     }
 
     .expert-container{
-        margin-top: 0px;
+        margin-top: -104rem;
     }
     .expert-navbar{
         display: block !important;
         overflow: hidden;
+        height: 100vh;
+        position: relative;
+        z-index: 99;
+        width: 100%;
     }
 
     .expert-content{
